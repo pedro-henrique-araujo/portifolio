@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black, #232323);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1234px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  width: 212px;
+}
+
+nav a {
+  color: var(--black, #232323);
+  font-weight: 800;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--dark-gray, #525252);
+}
+
+nav .text-align-left {
+  text-align: right;
+}
+
+.hero {
+  margin-top: 57px;
+
+  text-align: center;
+}
+
+.hero img {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 41px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  margin: 33px 0;
+}
+
+.hero p {
+  font-size: 14px;
+  font-weight: 500;
+  margin:0;
+  margin-bottom: 8px;
+}
+
+.hero button {
+  margin-top: 100px;
+  width: 170px;
+  height: 60px;
+  border-radius: 11px;
+  background: var(--orange, #eb760e);
+  border: none;
+  color: var(--white, #fcfcfc);
+  font-size: 14px;
+  font-weight: 600;
+  cursor:pointer;
+  text-transform: uppercase;
+}
