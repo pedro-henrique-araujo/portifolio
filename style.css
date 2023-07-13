@@ -135,7 +135,7 @@ section h2 {
 }
 
 #contact {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -154,9 +154,23 @@ section h2 {
   flex-direction: column;
 }
 
+#contact .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+#contact .form-group .validation-message {
+  margin: 0;
+  margin-top: 6px;
+  color: var(--red, #FF2C2C);
+  font-size: 14px;
+  font-weight: 500;
+  display: none;
+}
+
 #contact input {
   height: 65px;
-  margin-bottom: 28px;
 }
 
 #contact textarea {
@@ -179,6 +193,14 @@ section h2 {
   color: var(--light-gray, #cacaca);
 }
 
+#contact .touched:invalid {
+  border: 2px solid var(--red, #ff2c2c);
+}
+
+#contact .form-group:has(.touched:invalid) .validation-message {
+  display: block;
+}
+
 #contact button {
   color: var(--white, #fcfcfc);
   text-transform: uppercase;
@@ -188,16 +210,21 @@ section h2 {
   height: 60px;
   border-radius: 23px;
   background: var(--orange, #eb760e);
-  border:none;
+  border: none;
   margin-top: 57px;
   cursor: pointer;
+}
+
+#contact button:disabled {
+  background: gray;
+  cursor: inherit;
 }
 
 #contact .social-media {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 112px;  
+  width: 112px;
   padding: 0;
   margin-top: 71px;
 }
@@ -208,9 +235,28 @@ section h2 {
 }
 
 #contact .social-media .linkedin {
-background: url('./images/linkedin.svg');
+  background: url("./images/linkedin.svg");
 }
 
 #contact .social-media .whatsapp {
-  background: url('./images/whatsapp.svg');
+  background: url("./images/whatsapp.svg");
+}
+
+.success-display {
+  margin-top: 108px;
+  display: none;
+}
+
+#contact .success-display img {
+  margin-left: -40px;
+}
+
+#contact .success-message-text {
+  margin:0;
+  margin-top: 14px;
+  text-align: center;
+  color: var(--dark-gray, #525252);
+  font-size: 29px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
