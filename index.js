@@ -2,6 +2,7 @@ const inputElements = document.querySelectorAll("from input, textarea");
 const formElement = document.querySelector("form");
 const submitButtonElement = document.querySelector("#contact button");
 const successDisplayElement = document.querySelector(".success-display");
+const downloadResumeButton = document.querySelector('#hero button');
 
 for (const element of inputElements) {
   element.addEventListener("blur", () => {
@@ -34,4 +35,13 @@ submitButtonElement.addEventListener("click", (e) => {
 
   formElement.style.display = "none";
   successDisplayElement.style.display = "block";
+});
+
+downloadResumeButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const aDownloadResume = document.createElement('a');
+  aDownloadResume.download = 'pedro-henrique-araujo';
+  aDownloadResume.href = './resume.pdf';
+
+  aDownloadResume.click();
 });
