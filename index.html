@@ -26,11 +26,16 @@
       </ul>
     </nav>
     <section id="hero">
-      <img src="./images/hero-image.svg" alt="hero image" />
+      <img class="hero-img" src="./images/hero-image.svg" alt="hero image" />
       <h1>Pedro Henrique</h1>
       <p class="occupation">Software Developer</p>
       <p class="country">Brazil</p>
-      <button>Download Resume</button>
+      <button>
+        <div class="btn-icon-content">
+          <img src="./images/download.svg" alt="download icon" />
+          <span> Download CV </span>
+        </div>
+      </button>
     </section>
     <section id="projects">
       <h2>Projects</h2>
@@ -93,15 +98,23 @@
             <textarea placeholder="Enter your message..."></textarea>
           </div>
         </div>
-        <button disabled>Send</button>
+        <button disabled>
+          <div class="btn-icon-content">
+            <img src="./images/send.svg" alt="send" />
+            <span>Send</span>
+          </div>
+        </button>
       </form>
       <div class="success-display">
-        <img src="./images/success-image.svg" alt="" />
+        <img src="./images/success-image.svg" alt="success" />
         <div class="success-message-text">Message Sent!</div>
       </div>
       <ul class="social-media">
         <a href="https://www.linkedin.com/in/pedro-henrique/" target="_blank">
           <li class="linkedin"></li>
+        </a>
+        <a href="https://github.com/pedro-henrique-araujo" target="_blank">
+          <li class="github"></li>
         </a>
         <a href="https://wa.me/5585988447999" target="_blank">
           <li class="whatsapp"></li>
